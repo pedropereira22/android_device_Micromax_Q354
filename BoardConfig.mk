@@ -1,7 +1,7 @@
 # inherit from the proprietary version
--include vendor/leagoo/z5/BoardConfigVendor.mk
+-include vendor/Micromax/Q354/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/leagoo/z5/include
+TARGET_SPECIFIC_HEADER_PATH := device/Micromax/Q354/include
 
 ##################################
 #    **Odex Configuration**
@@ -44,7 +44,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13474725888
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/leagoo/z5/kernel
+TARGET_PREBUILT_KERNEL := device/Micromax/Q354/kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000
 
 BOARD_CUSTOM_BOOTIMG := true
@@ -52,7 +52,7 @@ BOARD_CUSTOM_BOOTIMG := true
 TARGET_KMODULES := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := z5,Z5,b6580_weg_a_m
+TARGET_OTA_ASSERT_DEVICE := Q354,Q354,b6580_weg_a_m
 
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
@@ -60,7 +60,7 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # EGL
-BOARD_EGL_CFG := device/leagoo/z5/configs/egl.cfg
+BOARD_EGL_CFG := device/Micromax/Q354/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
@@ -71,7 +71,7 @@ BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
 # RIL 
-BOARD_RIL_CLASS := ../../../device/leagoo/z5/ril/
+BOARD_RIL_CLASS := ../../../device/Micromax/Q354/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -91,7 +91,7 @@ WIFI_DRIVER_FW_PATH_P2P:=P2P
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/leagoo/z5/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/Micromax/Q354/bluetooth
 
 # Offline charging
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
@@ -103,8 +103,8 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # CWM
-TARGET_RECOVERY_FSTAB := device/leagoo/z5/rootdir/root/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/leagoo/z5/kernel
+TARGET_RECOVERY_FSTAB := device/Micromax/Q354/rootdir/root/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/Micromax/Q354/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP stuff
@@ -126,13 +126,13 @@ TW_USE_TOOLBOX := false
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 BOARD_SEPOLICY_DIRS := \
-       device/leagoo/z5/sepolicy
+       device/Micromax/Q354/sepolicy
 
 # Use old sepolicy version
 POLICYVERS := 29
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY += device/leagoo/z5/seccomp
+BOARD_SECCOMP_POLICY += device/Micromax/Q354/seccomp
 
 BLOCK_BASED_OTA := false
 TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so
